@@ -34,5 +34,11 @@ module.exports = {
   // log: {
   //   level: "silent"
   // }
+  connections : {
+      mongoDB: {
+          adapter: 'sails-mongo',
+          url: process.env.DB_URL || 'mongodb://local/salama', //WTF! throw if unset ENV.
+      }
+  }
 
 };

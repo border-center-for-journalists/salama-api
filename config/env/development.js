@@ -18,7 +18,7 @@ module.exports = {
    ***************************************************************************/
 
   connections : {
-      mongo: {
+      mongoDB: {
           adapter: 'sails-mongo',
           url: 'mongodb://localhost/salama'
       }
