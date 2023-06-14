@@ -17,9 +17,9 @@ module.exports = {
    * environment (see config/connections.js and config/models.js )           *
    ***************************************************************************/
 
-  connections : {
+  datastores : {
       mongoDB: {
-          adapter: 'sails-mongo',
+          adapter: 'sails-mongo-cloud',
           url: 'mongodb://localhost/salama'
       }
   }

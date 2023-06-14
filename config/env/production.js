@@ -34,11 +34,15 @@ module.exports = {
   // log: {
   //   level: "silent"
   // }
-  connections : {
+  datastores : {
       mongoDB: {
-          adapter: 'sails-mongo',
+          adapter: 'sails-mongo-cloud',
           url: process.env.DB_URL || 'mongodb://local/salama', //WTF! throw if unset ENV.
       }
+  },
+  sockets: {
+    onlyAllowOrigins: ["http://salama-api.borderhub.org", "https://salama-api.borderhub.org"]
   }
+
 
 };
