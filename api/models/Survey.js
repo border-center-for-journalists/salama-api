@@ -8,7 +8,10 @@
 module.exports = {
 
   attributes: {
-
+    answers: { type: 'json' },
+    user: { type: 'json' },
+    type: { type: 'string' },
+    results: { type: 'json' }
   }
 };
 
